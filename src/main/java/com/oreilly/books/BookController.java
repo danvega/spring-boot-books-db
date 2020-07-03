@@ -29,4 +29,12 @@ class BookController {
         return jdbcTemplate.queryForObject(sql, new Object[]{id}, new BookRowMapper());
     }
 
+    // create
+
+
+    // update
+
+
+    // delete
+
 }
