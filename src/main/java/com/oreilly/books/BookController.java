@@ -48,6 +48,7 @@ class BookController {
     }
 
     @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void update(@RequestBody Book book, @PathVariable int id) {
         String sql = "update book set title = ?, author = ?, publisher = ?, release_date = ?, isbn = ?, topic =? where id = ?";
         int update = jdbcTemplate.update(sql,
@@ -64,6 +65,7 @@ class BookController {
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable int id) {
         String sql = "delete from book where id = ?";
         int delete = jdbcTemplate.update(sql,id);
