@@ -46,6 +46,8 @@ public class DataLoader implements CommandLineRunner {
                 "Spring");
         books.add(three);
 
-        books.forEach(bookService::create);
+        for(Book book : books) {
+            bookService.create(book);
+        }
     }
 }
