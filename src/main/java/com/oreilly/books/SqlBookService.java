@@ -40,7 +40,7 @@ public class SqlBookService implements BookService {
                 book.getTopic());
 
         if( insert == 1 ) {
-            System.out.println("A new book was inserted into the datbase: " + book.getTitle());
+            System.out.println("A new book was inserted into the database: " + book.getTitle());
         }
     }
 
