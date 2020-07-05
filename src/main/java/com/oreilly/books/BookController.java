@@ -12,13 +12,9 @@ import java.util.List;
 @RequestMapping("/books")
 class BookController {
 
-    @GetMapping
-    public List<Book> list() {
-        return null;
-    }
+    // list
 
-    @GetMapping("/{id}")
-    public Book get(@PathVariable int id) {
-        return null;
-    }
+
+    // get
+
 }
